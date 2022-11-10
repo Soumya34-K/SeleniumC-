@@ -47,7 +47,8 @@ namespace Selenium_Test
             IWebElement Linktext = driver.FindElement(By.XPath("//a[@id='dynamicLink']"));
             String text = Linktext.Text;
             Console.WriteLine(text);
-            driver.Quit();
+            driver.Close();
+            
 
 
         }
